@@ -1,17 +1,17 @@
 class Boxquell < Formula
   desc "MicroVM sandboxes for coding agents with an explicit network allowlist"
   homepage "https://github.com/Boxquell/boxquell"
-  version "0.1.0"
+  version "0.1.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.0/boxquell-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "3ed1b0696fe6ba7027fb9512dfbff22d3c0e28a622cf65477c89a625192a3d55"
+      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.1/boxquell-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "2903beb3cf1f6ac5dd785f03f1141bbd96f5ea47f6ee9ab9e9e98a308fc8bc23"
     end
     on_intel do
-      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.0/boxquell-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "7e1af1feb6e6799fa28eca35e444208fd73eb0389137d8c5b1f38d764279622c"
+      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.1/boxquell-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "4c044abc88ce875a395a8ca7a1ba8e09f497c5763ad8cf2b4779be3398b05307"
     end
     # Packs the system images; Homebrew keeps it out of the PATH, boxquell finds it there.
     depends_on "e2fsprogs"
@@ -19,8 +19,8 @@ class Boxquell < Formula
 
   on_linux do
     on_intel do
-      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.0/boxquell-v0.1.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b2383b06cdfbbc47068389fb33aebe28a97e1ae37bf15c2b0595cd01c695270a"
+      url "https://github.com/Boxquell/boxquell/releases/download/v0.1.1/boxquell-v0.1.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9892276376f6c26eaf77c431a140d30b8945aafa1dca9e2e6a76a37762608c6f"
     end
   end
 
